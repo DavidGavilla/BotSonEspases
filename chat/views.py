@@ -3,11 +3,11 @@ from rest_framework.response import Response
 from rest_framework import status
 import os
 
+
 from rag_api.BotLogic.Controlador import Controlador
 
 controlador = Controlador(
-    api_key=os.getenv("GEMINI_API_KEY"),
-    token=os.getenv("TELEGRAM_BOT_TOKEN"),
+    api_key= os.getenv("OPENAI_API_KEY"),
     start_bot=False,
 )
 
